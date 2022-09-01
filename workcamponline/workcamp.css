@@ -1,0 +1,575 @@
+:root {
+    --basecolor: #ffffff;
+    --subcolor: #f2f0f0;
+    --maincolor: #eccc12;
+    --assortcolor: #797777;
+    --accentcolor: #ff6ac6;
+    --fontcolor: #444444;
+    --fontcolorlight: #ffffff;
+}
+
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+    background-color: var(--subcolor);
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    text-align: left;
+    color: var(--fontcolor);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {}
+
+main {
+    /* background-color: rgb(248, 227, 227); */
+    /* width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+/* @media screen and (max-width:900px) {
+    main{
+        width: auto;
+    }
+} */
+#twittershare {
+    background-color: #1DA1F2;
+    background-image: url("../image/2021 Twitter logo - white.png");
+    background-size: 42px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-top: 100px;
+    margin-right: 26px;
+    float: right;
+}
+
+#twittershare:hover {
+    background-color: #62bcf3;
+}
+
+#twittershare::after {
+    content: 'ツイート';
+    position: absolute;
+    white-space: nowrap;
+    top: 186px;
+    right: 34px;
+    font-weight: bold;
+    color: var(--assortcolor);
+}
+
+footer {
+    background-color: #fff;
+    /* color: var(--fontcolorlight); */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* margin-top: 20px; */
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* line-height: 40px; */
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+h3 {
+    font-size: 26px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+h4 {
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* material-iconsアイコンのサイズを変更するためのルール */
+.material-icons {
+    font-size: 16px;
+    vertical-align: -2px;
+}
+
+.icon-small {
+    font-size: 18px;
+    vertical-align: -3px;
+}
+
+.icon-large {
+    font-size: 42px;
+    vertical-align: -11px;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.test {
+    background: lightblue;
+}
+
+.waku {
+    padding: 26px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+}
+
+.underline {
+    border-bottom: 2px solid #ffffff;
+}
+
+.nounderline {
+    text-decoration: none;
+}
+
+.link-white {
+    color: var(--fontcolorlight);
+    text-decoration: none;
+}
+
+.link-gray {
+    color: var(--fontcolor);
+    text-decoration: none;
+}
+
+.link-gray:hover {
+    color: #999999;
+}
+
+.ws_nomal {
+    white-space: normal;
+}
+
+@media screen and (max-width:720px) {
+    #whatis .mediafixfont{
+        font-size: 8.6vw;
+    }
+}
+
+
+
+
+
+header {
+    height: 0px;
+}
+
+#napiieylogo {
+    margin-top: 20px;
+    margin-left: 30px;
+    background-image: url("../workcamponline/image/napiieylogo.png");
+    background-size: 180px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 290px;
+    height: 90px;
+    z-index: 100;
+}
+@media screen and (max-width:1200px) {
+    #napiieylogo {
+        display: none;
+    }
+}
+
+#top {
+    height: 600px;
+    width: 100%;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#top::before {
+    position: fixed;
+    width: 100%;
+    height: 600px;
+    content: '';
+    background-image: url("../workcamponline/image/titlefield-min.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -100;
+    /* background-attachment:fixed; */
+    -webkit-animation: pan 14s 1;
+    animation: pan 14s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pan {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 300;
+    }
+}
+
+#topwrapper {}
+
+#top_description {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 3px 5px 3px #3a3a3a;
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#titlelogo {
+    background-image: url("../workcamponline/image/WorkCampTitle.png");
+    width: 391px;
+    height: 173px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+#download_button {
+    display: flex;
+    background-color: #ffffff;
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+#whatis {
+    color: #fff;
+    background-color: #21a7cf;
+    /* background-color: #fff; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whatis_wrapper {
+    width: 720px;
+}
+
+#whatis_wrapper h2 {
+    font-size: 64px;
+}
+
+#functions {
+    background-color: #fff;
+}
+
+.bgarea {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagecircledummy {
+    /* background-color: #ec128a; */
+    display: block;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.imagecircledummy.left {
+    margin-right: 50px;
+}
+
+.imagecircledummy.right {
+    margin-left: 50px;
+}
+
+.imagecircle {
+    /* background-color: #ec128a; */
+    display: block;
+    content: '';
+    position: absolute;
+    background-size: cover;
+    height: 380px;
+    width: 100%;
+    border-radius: 0%;
+    z-index: 1000;
+    left: calc(0px);
+    transition: 0.5s;
+}
+
+.imagecircle.show {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+}
+
+.imagecircle.show.left {
+    left: calc(50% - 360px);
+}
+
+.imagecircle.show.right {
+    left: calc(50% + 60px);
+}
+
+.contentarea {
+    /* color: #fff; */
+    width: 370px;
+}
+
+.fadein {
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.fadein.show {
+    opacity: 1;
+}
+
+.fadein.fast {
+    transition: 0.5s;
+}
+
+.fadein.left {
+    margin-left: 200px;
+}
+
+.fadein.left.show {
+    margin-left: 0px;
+}
+
+.fadein.right {
+    margin-right: 200px;
+}
+
+.fadein.right.show {
+    margin-right: 0px;
+}
+
+#wokspace .imagecircle {
+    background-image: url("../workcamponline/image/WorkCampOnline007.jpg");
+}
+
+#soundvisual .imagecircle {
+    background-image: url("../workcamponline/image/titlefield-min.png");
+}
+
+#timemanagement .imagecircle {
+    background-image: url("../workcamponline/image/timemanagement.jpg");
+}
+
+#gamification .imagecircle {
+    background-image: url("../workcamponline/image/congrat.jpg");
+}
+
+#eliminatedistractions .imagecircle {
+    background-image: url("../workcamponline/image/WorkCampOnline007.jpg");
+}
+
+
+
+#requirements {
+    background-color: var(--subcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#requirements .inner {
+    width: 720px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#download {
+    background-color:#cfcdcb;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+#download.show{
+    background-color:var(--assortcolor);
+}
+
+#download .inner {
+    width: 720px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    transform-origin: center;
+    /* filter: blur(10px); */
+}
+/* #download .inner.show {
+    filter: blur(0px);
+} */
+
+#install {
+    background-color: rgb(138, 138, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+#install.show{
+    background-color: #fff;
+}
+
+#install .inner {
+    width: 720px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#howtouse {
+    /* background-color: var(--assortcolor); */
+    /* perspective: 1px;
+  height: 400px; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateZ(0);
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: #fff;
+}
+
+#howtouse .zoombg {
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--assortcolor);
+    background-image: url("../workcamponline/image/titlefield-min.png");
+    background-size: 2600px;
+    background-position: center;
+    filter: brightness(80%);
+    z-index: -90;
+    transition: 1.5s;
+}
+#howtouse .zoombg.show {
+    background-size: 2800px;
+}
+#howtouse .inner {
+    width: 720px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@media screen and (max-width:720px) {
+    #howtouse .inner {
+        width: 100%;
+    }
+}
+
+#tweetthis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 80px;
+}
+#tweetthis .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1DA1F2;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* text-align: center;
+    vertical-align: middle; */
+    transition: 1s;
+}
+#tweetthis .button:hover{
+    height: 80px;
+    width: 560px;
+    border-radius: 80px;
+}
+#tweetthis .inner{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: 1s; */
+}
+#tweetthis .inner:hover{
+    font-size: 34px;
+}
+
+#tweetthis .inner span {
+    /* background-color: yellow; */
+    display: inline-block;
+    background-image: url("../workcamponline/image/2021\ Twitter\ logo\ -\ white.png");
+    background-size: cover;
+    width: 60px;
+    height: 51px;
+    margin-right: 16px;
+}
+
+
+#footer {
+    background-color: var(--assortcolor);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .inner {
+    width: 360px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#napiieyimage {
+    width: 100px;
+    height: 99px;
+    background-image: url("../workcamponline/image/napiiey_round.png");
+    background-size: cover;
+    float: left;
+    margin-right: 20px;
+}
