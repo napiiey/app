@@ -389,10 +389,14 @@ header {
 
 #wokspace .imagecircle {
     background-image: url("../workcamponline/image/WorkCampOnline007.jpg");
+    background-size: 150%;
+    background-position: left;
 }
 
 #soundvisual .imagecircle {
     background-image: url("../workcamponline/image/titlefield-min.png");
+    background-size: 200%;
+    background-position: right;
 }
 
 #timemanagement .imagecircle {
@@ -404,7 +408,7 @@ header {
 }
 
 #eliminatedistractions .imagecircle {
-    background-image: url("../workcamponline/image/WorkCampOnline007.jpg");
+    background-image: url("../workcamponline/image/titlefield-min.png");
 }
 
 
@@ -563,9 +567,18 @@ header {
     align-items: center;
 }
 #footer .inner {
-    width: 360px;
+    /* background-color: #1DA1F2; */
+    width: 720px;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: flex;
+}
+#footer .leftcont{
+    width: 240px;
+    vertical-align: middle;
+}
+#footer .rightcont{
+    width: 360px;
 }
 #napiieyimage {
     width: 100px;
@@ -621,8 +634,17 @@ header {
 #guidmain {
     background-image: url("../workcamponline/image/roomback.jpg");
 }
+#guidmenu {
+    background-image: url("../workcamponline/image/fieldback.jpg");
+}
 
 #guidavatar .wrapper {
+    width: 720px;
+}
+#guidmain .wrapper {
+    width: 720px;
+}
+#guidmenu .wrapper {
     width: 720px;
 }
 
@@ -659,6 +681,3 @@ header {
     background-position: center;
 } */
 
-#guidmain .wrapper {
-    width: 720px;
-}
