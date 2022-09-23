@@ -646,6 +646,9 @@ header {
 #guidmenu {
     background-image: url("../workcamponline/image/fieldback.jpg");
 }
+#guidother {
+    background-image: url("../workcamponline/image/roomback.jpg");
+}
 
 #guidavatar .wrapper {
     width: 720px;
@@ -654,6 +657,9 @@ header {
     width: 720px;
 }
 #guidmenu .wrapper {
+    width: 720px;
+}
+#guidother .wrapper {
     width: 720px;
 }
 
