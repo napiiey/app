@@ -1,0 +1,14 @@
+body{
+    background-color: #333333;
+}
+canvas {
+    width: 960px;
+    height: 540px;
+}
+@media screen and (max-width:960px){
+    canvas {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            height: auto;
+        }
+}
